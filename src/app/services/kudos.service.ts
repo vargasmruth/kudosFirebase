@@ -10,9 +10,7 @@ export class KudosService {
   fireKudosURL = 'https://kudos-d5faa.firebaseio.com/kudos.json';
   fireKudoURL = 'https://kudos-d5faa.firebaseio.com/kudos/';
 
-  constructor(private http: Http) {
-
-  }
+  constructor(private http: Http) { }
 
   getKudos() {
     return this.http.get(this.fireKudosURL)
@@ -63,5 +61,7 @@ export class KudosService {
       return res.json();
     });
   }
+
+  // ---- rabbit
 
 }

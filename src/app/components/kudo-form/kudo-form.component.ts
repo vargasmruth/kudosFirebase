@@ -5,6 +5,8 @@ import {ActivatedRoute} from '@angular/router';
 
 import { KudosService } from './../../services/kudos.service';
 
+import { RabbitService } from './../../services/rabbit.service';
+
 @Component({
   selector: 'app-kudo-form',
   templateUrl: './kudo-form.component.html',
@@ -50,6 +52,7 @@ export class KudoFormComponent implements OnInit {
       return;
     }
     this.nuevoKudo();
+    console.log('Envio');
     return;
   }
 

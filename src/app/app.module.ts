@@ -12,6 +12,7 @@ import { KudosListComponent } from './components/kudos-list/kudos-list.component
 
 import { KudosService } from './services/kudos.service';
 import { KeysPipe } from './pipes/keys.pipe';
+import { RabbitService } from './services/rabbit.service';
 
 
 @NgModule({
@@ -27,7 +28,7 @@ import { KeysPipe } from './pipes/keys.pipe';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [KudosService],
+  providers: [KudosService, RabbitService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
